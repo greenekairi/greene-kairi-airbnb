@@ -180,10 +180,36 @@ document.addEventListener('DOMContentLoaded', () => {
     if (nightRateEl) nightRateEl.textContent = BASE_NIGHTLY_RATE;
     if (cleaningEl) cleaningEl.textContent = `$${CLEANING_FEE}`;
 
-    // Widget Dates Sync
+    // Widget Dates Sync & Auto-Validation
     const widgetCheckin = document.getElementById('widget-checkin');
     const widgetCheckout = document.getElementById('widget-checkout');
     const widgetBtn = document.getElementById('widget-btn');
+
+    if (widgetCheckin && widgetCheckout) {
+        widgetCheckin.addEventListener('change', () => {
+            if (widgetCheckin.value) {
+                const checkinVal = new Date(widgetCheckin.value);
+                const minCheckout = new Date(checkinVal);
+                minCheckout.setDate(minCheckout.getDate() + 1);
+                widgetCheckout.min = minCheckout.toISOString().split('T')[0];
+                
+                // Keep booking form in sync immediately
+                if (checkinInput) {
+                    checkinInput.value = widgetCheckin.value;
+                    // Trigger min checkout sync for booking form
+                    const bookingMinCheckout = new Date(checkinVal);
+                    bookingMinCheckout.setDate(bookingMinCheckout.getDate() + 1);
+                    checkoutInput.min = bookingMinCheckout.toISOString().split('T')[0];
+                }
+            }
+        });
+
+        widgetCheckout.addEventListener('change', () => {
+            if (checkoutInput) {
+                checkoutInput.value = widgetCheckout.value;
+            }
+        });
+    }
 
     if (widgetBtn) {
         widgetBtn.addEventListener('click', () => {
