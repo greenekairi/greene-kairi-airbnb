@@ -331,4 +331,19 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // Sticky Booking Bar Visibility Scroll Listener
+    const stickyBar = document.getElementById('sticky-booking-bar');
+    const heroSection = document.querySelector('.hero');
+
+    if (stickyBar) {
+        window.addEventListener('scroll', () => {
+            const heroHeight = heroSection ? heroSection.offsetHeight : 500;
+            if (window.scrollY > heroHeight - 100) {
+                stickyBar.classList.add('show');
+            } else {
+                stickyBar.classList.remove('show');
+            }
+        });
+    }
 });
