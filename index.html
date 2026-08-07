@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greene Kairi — Arima Tropical Forest & Mountain Retreat</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Welcome to Greene Kairi in Arima, Trinidad. A cozy woodland studio cabin nestled in a tropical forest with spectacular views of the Northern Range mountains. Book your natural escape today.">
+    <meta name="keywords" content="Arima cabin rental, Greene Kairi, Arima mountain views, Trinidad forest stay, Trinidad nature retreat, Arima Airbnb">
+    <meta property="og:title" content="Greene Kairi — Arima Tropical Forest & Mountain Retreat">
+    <meta property="og:description" content="Experience peaceful mountain views and rich tropical forest serenity at Greene Kairi in Arima, Trinidad.">
+    <meta property="og:image" content="assets/greene_kairi_view.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar" id="home">
+        <div class="container">
+            <a href="#home" class="nav-logo">
+                <img src="assets/logo.png" alt="Greene Kairi Logo" class="nav-logo-img">
+                <span>Greene Kairi</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#overview">The Space</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#reviews">Guest Stories</a></li>
+                    <li><a href="#book">Book</a></li>
+                    <li><a href="#book" class="btn-nav-book">Reserve Now</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="assets/greene_kairi_view.jpg" alt="Greene Kairi Cabin Nestled in Arima Forest Hills">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-tagline">Arima &bull; Trinidad & Tobago</p>
+                <h1>Where the forest whispers and mountains rise.</h1>
+            </div>
+            
+            <!-- Quick Date Selection Widget -->
+            <div class="hero-widget">
+                <h3>Select Your Dates</h3>
+                <div class="widget-row">
+                    <label for="widget-checkin">Check In</label>
+                    <input type="date" id="widget-checkin" class="widget-input">
+                </div>
+                <div class="widget-row">
+                    <label for="widget-checkout">Check Out</label>
+                    <input type="date" id="widget-checkout" class="widget-input">
+                </div>
+                <button type="button" id="widget-btn" class="btn-widget">Check Availability</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section & Stats -->
+    <section class="section" id="overview">
+        <div class="container">
+            <h2 class="section-title">The Space</h2>
+            <div class="section-subtitle" style="max-width: 800px; text-align: center; margin: 0 auto 4rem auto;">
+                <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">Nestled at the edge of the forested hills of Arima, Greene Kairi is a peaceful retreat where nature and comfort come together. Wake up to misty mountain views, the melodies of tropical birds, and the gentle breeze rustling through the rainforest canopy.</p>
+                <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">Whether you're seeking a quiet escape, a romantic getaway, or a comfortable base to explore Trinidad, our cozy studio offers the perfect balance of relaxation and convenience. Sip your morning coffee surrounded by lush greenery, unwind in a tranquil setting, and experience the warmth of authentic Trinbago hospitality.</p>
+                <p style="font-size: 1.1rem;">Just minutes from Arima's town center yet surrounded by nature, Greene Kairi is your home away from the ordinary—a place to slow down, recharge, and reconnect with what matters most.</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <!-- Guest Icon SVG -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <div class="stat-value">2</div>
+                    <div class="stat-label">Guests (Max)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <!-- Bed Icon SVG -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9M10 8v9"></path></svg>
+                    </div>
+                    <div class="stat-value">1</div>
+                    <div class="stat-label">Studio Bedroom</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <!-- Sleep Icon SVG -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22v-3a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v3M12 2a5 5 0 0 1 5 5v5a5 5 0 0 1-10 0V7a5 5 0 0 1 5-5z"></path></svg>
+                    </div>
+                    <div class="stat-value">1</div>
+                    <div class="stat-label">Queen Bed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <!-- Bath Icon SVG -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6v6m6-6v6M4 12h16c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2v-4c0-1.1.9-2 2-2zM12 2v2M8 2h8"></path></svg>
+                    </div>
+                    <div class="stat-value">1</div>
+                    <div class="stat-label">Bathroom</div>
+                </div>
+            </div>
+
+            <!-- Detailed Split Features -->
+            <div class="feature-split">
+                <div class="feature-img-wrapper">
+                    <img src="assets/living_room.png" alt="Cozy wooden cabin interior looking out to green mountain slopes">
+                </div>
+                <div class="feature-content">
+                    <h3>Forest Living</h3>
+                    <p>Designed with natural materials and rustic comfort in mind. The studio room opens to panoramic views of the Northern Range, featuring warm timber finishes, cozy viewing angles, and a beautiful open balcony perfect for listening to local forest songbirds.</p>
+                    
+                    <div class="amenities-list">
+                        <div class="amenity-item">
+                            <!-- Mountain View SVG -->
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22L12 2l8 20H4z"></path></svg>
+                            Mountain view
+                        </div>
+                        <div class="amenity-item">
+                            <!-- Wi-Fi SVG -->
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+                            Fast wifi – 80 Mbps
+                        </div>
+                        <div class="amenity-item">
+                            <!-- Kitchen SVG -->
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="2" x2="6" y2="4"></line><line x1="10" y1="2" x2="10" y2="4"></line><line x1="14" y1="2" x2="14" y2="4"></line></svg>
+                            Kitchen
+                        </div>
+                        <div class="amenity-item">
+                            <!-- AC SVG -->
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="10" rx="2" ry="2"></rect><path d="M7 13v3M12 13v4M17 13v3M3 9h18"></path></svg>
+                            AC - split type ductless system
+                        </div>
+                        <div class="amenity-item">
+                            <!-- Parking SVG -->
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="22" height="13" rx="2" ry="2"></rect><path d="M7 11h2v2H7zM15 11h2v2h-2zM4 18h16"></path></svg>
+                            Free driveway parking on premises – 1 space
+                        </div>
+                        <div class="amenity-item">
+                            <!-- Luggage SVG -->
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="14" rx="2" ry="2"></rect><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><path d="M10 11v4M14 11v4"></path></svg>
+                            Luggage dropoff allowed
+                        </div>
+                        <div class="amenity-item">
+                            <!-- Essentials SVG -->
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h16v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10zM4 4h16v4H4V4z"></path></svg>
+                            <div>
+                                Essentials
+                                <span style="font-size: 0.8rem; opacity: 0.8; display: block; line-height: 1.3; margin-top: 0.15rem;">Towels, bed sheets, soap, and toilet paper</span>
+                            </div>
+                        </div>
+                        <div class="amenity-item">
+                            <!-- Dishes & Silverware SVG -->
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2v20M2 2v10a3 3 0 0 0 3 3h1a3 3 0 0 0 3-3V2M6 2v4M12 2v20"></path></svg>
+                            <div>
+                                Dishes & silverware
+                                <span style="font-size: 0.8rem; opacity: 0.8; display: block; line-height: 1.3; margin-top: 0.15rem;">Bowls, chopsticks, plates, cups, etc.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section" id="gallery" style="background-color: var(--accent-light);">
+        <div class="container">
+            <h2 class="section-title">The Gallery</h2>
+            <p class="section-subtitle">Take a visual tour through our forest studio cabin, private viewing deck, and mountain slopes.</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-src="assets/greene_kairi_view.jpg">
+                    <img src="assets/greene_kairi_view.jpg" alt="Greene Kairi cabin exterior under tropical mountain sunset">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Cabin Exterior</span>
+                        <span class="gallery-subtitle">Nestled in tropical greenery</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="assets/living_room.png">
+                    <img src="assets/living_room.png" alt="Cozy timber studio interior looking out to misty rainforest">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Studio Interior</span>
+                        <span class="gallery-subtitle">Warm wood and scenic views</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="assets/deck.png">
+                    <img src="assets/deck.png" alt="Private forest veranda deck overlooking the valley at sunrise">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Private Veranda</span>
+                        <span class="gallery-subtitle">Overlooking Arima valley & peaks</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal Container -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+            <button class="lightbox-nav lightbox-prev" aria-label="Previous image">&#8249;</button>
+            <img class="lightbox-img" src="" alt="Zoomed view">
+            <button class="lightbox-nav lightbox-next" aria-label="Next image">&#8250;</button>
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="reviews">
+        <div class="container">
+            <h2 class="section-title">Guest Stories</h2>
+            <p class="section-subtitle">Hear from our previous guests about their nature experiences at Greene Kairi.</p>
+            
+            <div class="slider-container">
+                <div class="slider-track">
+                    <div class="slide">
+                        <p class="slide-quote">"Waking up to the morning mist rolling over the Arima forest hills was magical. The deck is perfect for bird-watching. A truly serene mountain studio escape."</p>
+                        <p class="slide-author">— Liam & Priya, Port of Spain</p>
+                    </div>
+                    <div class="slide">
+                        <p class="slide-quote">"A rustic paradise. Absolute peace and quiet. The woodwork inside the studio is beautiful, and the mountain view at sunrise is something I'll never forget."</p>
+                        <p class="slide-author">— Daniel K., Toronto</p>
+                    </div>
+                    <div class="slide">
+                        <p class="slide-quote">"The location is fantastic if you want to unplug. Highly recommend drinking coffee on the deck while listening to the forest wake up. Extremely cozy!"</p>
+                        <p class="slide-author">— Chloe M., London</p>
+                    </div>
+                </div>
+                <div class="slider-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking / Direct Reservation Inquiry -->
+    <section class="section booking-section" id="book">
+        <div class="container">
+            <h2 class="section-title">Plan Your Stay</h2>
+            <p class="section-subtitle">Secure your stay directly below or view our official listing platforms for verified bookings.</p>
+            
+            <div class="booking-split">
+                <div class="booking-info">
+                    <h3>Book via Airbnb</h3>
+                    <p>Prefer to secure your booking through Airbnb? You can access our verified listing page with verified guest reviews, secure check-in arrangements, and full customer guarantees.</p>
+                    
+                    <a href="https://www.airbnb.com/h/greene-kairi-studio" target="_blank" rel="noopener noreferrer" class="btn-external-airbnb">
+                        <!-- Airbnb Icon SVG -->
+                        <svg width="20" height="20" viewBox="0 0 32 32" fill="currentColor"><path d="M16 1c-2.007 0-3.727 1.013-4.787 2.547-1.12 1.62-1.667 3.653-1.667 5.76 0 3.733 2.133 6.947 5.253 8.307.72.32 1.507.493 2.32.507.36.007.707 0 1.053-.053.8-.12 1.573-.387 2.293-.773 2.373-1.28 3.96-3.84 3.96-6.72 0-2.12-.547-4.14-1.667-5.76C21.727 2.013 20.007 1 16 1zm0 3c2.72 0 3.987 1.733 4.227 3.52.12.893-.053 1.84-.52 2.667-.627 1.107-1.787 1.813-3.053 1.813h-1.307c-1.267 0-2.427-.707-3.053-1.813-.467-.827-.64-1.773-.52-2.667.24-1.787 1.507-3.52 4.227-3.52zm0 13c-2.587 0-5.027.693-7.147 1.907C5.547 20.76 3 24.32 3 28.32V31h26v-2.68c0-4-2.547-7.56-5.853-9.413C21.027 17.693 18.587 17 16 17zm0 3c2.08 0 4.027.533 5.76 1.48 2.32 1.28 3.76 3.68 3.76 6.333V28H6.48v-.187c0-2.653 1.44-5.053 3.76-6.333 1.733-.947 3.68-1.48 5.76-1.48z"/></svg>
+                        View Airbnb Listing
+                    </a>
+                    
+                    <div class="divider-text">Or Inquire Directly</div>
+                    
+                    <p>Send us a direct stay inquiry using the estimator tool on the right, and we will get back to you with a custom quote.</p>
+                </div>
+                
+                <!-- Inquiry Form -->
+                <div class="booking-form-card">
+                    <form id="booking-inquiry-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-input" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-input" placeholder="your.email@example.com" required>
+                        </div>
+                        
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="checkin">Check In</label>
+                                <input type="date" id="checkin" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="checkout">Check Out</label>
+                                <input type="date" id="checkout" class="form-input" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="guests">Guests</label>
+                            <select id="guests" class="form-input">
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests (Max)</option>
+                            </select>
+                        </div>
+
+                        <!-- Dynamic Estimation Preview -->
+                        <div id="pricing-preview" class="pricing-preview">
+                            <div class="price-row">
+                                <span>$<span id="night-rate">50</span> x <span id="night-qty">0</span> nights</span>
+                                <span id="subtotal-val">$0</span>
+                            </div>
+                            <div class="price-row">
+                                <span>Cleaning fee</span>
+                                <span id="cleaning-val">$30</span>
+                            </div>
+                            <div class="price-row total">
+                                <span>Total Estimate</span>
+                                <span id="total-val">$0</span>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit">Send Stay Inquiry</button>
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h4>Greene Kairi</h4>
+                    <p>Cozy studio retreat at the foothills in Arima, Trinidad.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.facebook.com/greenekairi" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="https://www.instagram.com/greenekairi_airbnb/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="https://www.youtube.com/@GreeneKairi" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h5>Navigation</h5>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#overview">The Space</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#reviews">Guest Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Listing Links</h5>
+                    <ul>
+                        <li><a href="https://www.airbnb.com/h/greene-kairi-studio" target="_blank" rel="noopener noreferrer">Official Airbnb Listing</a></li>
+                        <li><a href="#book">Direct Inquiry Rates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Contact & Details</h5>
+                    <ul>
+                        <li>Email: <a href="mailto:greenekairi@gmail.com">greenekairi@gmail.com</a></li>
+                        <li>Phone: <a href="tel:+18682674653">+1 (868) 267-4653</a></li>
+                        <li>Location: <a href="https://maps.app.goo.gl/kgysCt4fKAt28tsB9" target="_blank" rel="noopener noreferrer">Noriega Trace off Arima By-Pass Road, Trinidad & Tobago</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Greene Kairi. All rights reserved.</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

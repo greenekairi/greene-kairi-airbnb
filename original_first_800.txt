@@ -1,0 +1,88 @@
+Created At: 2026-07-20T01:02:55Z
+Completed At: 2026-07-20T01:02:55Z
+File Path: `file:///home/sarah/Documents/greenekairi/index.html`
+Total Lines: 357
+Total Bytes: 20594
+Showing lines 1 to 357
+The following code has been modified to include a line number before every line, in the format: <line_number>: <original_line>. Please note that any changes targeting the original code should remove the line number, colon, and leading space.
+1: <!DOCTYPE html>
+2: <html lang="en">
+3: <head>
+4:     <meta charset="UTF-8">
+5:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+6:     <title>Kairi Greenes — Modern Minimalist Forest Retreat</title>
+7:     
+8:     <!-- Meta tags for SEO -->
+9:     <meta name="description" content="Welcome to Kairi Greenes. Experience luxury modern minimalist cabin living nestled in a quiet forest retreat. Book your escape today.">
+10:     <meta name="keywords" content="Airbnb, cabin, luxury cabin, minimalist architecture, greenekairi, forest stay, vacation rental">
+11:     <meta property="og:title" content="Kairi Greenes — Modern Minimalist Forest Retreat">
+12:     <meta property="og:description" content="Experience architectural elegance and pristine forest views at Kairi Greenes. Ready to reserve.">
+13:     <meta property="og:image" content="assets/exterior.png">
+14:     
+15:     <!-- Stylesheets -->
+16:     <link rel="stylesheet" href="styles.css">
+17: </head>
+18: <body>
+19: 
+20:     <!-- Header Navigation -->
+21:     <header class="navbar" id="home">
+22:         <div class="container">
+23:             <a href="#home" class="nav-logo">Kairi Greenes</a>
+24:             <nav>
+25:                 <ul class="nav-links">
+26:                     <li><a href="#home">Home</a></li>
+27:                     <li><a href="#overview">Overview</a></li>
+28:                     <li><a href="#gallery">Gallery</a></li>
+29:                     <li><a href="#reviews">Reviews</a></li>
+30:                     <li><a href="#book">Book</a></li>
+31:                     <li><a href="#book" class
+<truncated 18692 bytes>
+div>
+311:     </section>
+312: 
+313:     <!-- Footer -->
+314:     <footer class="footer">
+315:         <div class="container">
+316:             <div class="footer-grid">
+317:                 <div class="footer-brand">
+318:                     <h4>Kairi Greenes</h4>
+319:                     <p>Luxury minimalist escape nestled deep in pristine nature.</p>
+320:                 </div>
+321:                 <div class="footer-col">
+322:                     <h5>Navigation</h5>
+323:                     <ul>
+324:                         <li><a href="#home">Home</a></li>
+325:                         <li><a href="#overview">Overview</a></li>
+326:                         <li><a href="#gallery">Gallery</a></li>
+327:                         <li><a href="#reviews">Reviews</a></li>
+328:                     </ul>
+329:                 </div>
+330:                 <div class="footer-col">
+331:                     <h5>Airbnb Links</h5>
+332:                     <ul>
+333:                         <li><a href="https://www.airbnb.com/h/greene-kairi-studio" target="_blank" rel="noopener noreferrer">Official Listing</a></li>
+334:                         <li><a href="#book">Direct Rates Inquiry</a></li>
+335:                     </ul>
+336:                 </div>
+337:                 <div class="footer-col">
+338:                     <h5>Contact & Details</h5>
+339:                     <ul>
+340:                         <li>Email: contact@kairigreenes.com</li>
+341:                         <li>Location: Forest Retreat</li>
+342:                     </ul>
+343:                 </div>
+344:             </div>
+345:             
+346:             <div class="footer-bottom">
+347:                 <p>&copy; 2026 Kairi Greenes. All rights reserved.</p>
+348:                 <p>Designed with architectural intent.</p>
+349:             </div>
+350:         </div>
+351:     </footer>
+352: 
+353:     <!-- Scripts -->
+354:     <script src="app.js"></script>
+355: </body>
+356: </html>
+357: 
+The above content shows the entire, complete file contents of the requested file.

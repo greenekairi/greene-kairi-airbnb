@@ -1,0 +1,82 @@
+"@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@200;300;400;500;600&display=swap');
+
+:root {
+    /* Color Palette - Modern Minimalist / Luxury Alabaster & Warm Charcoal */
+    --bg-main: #faf9f6;
+    --bg-card: #ffffff;
+    --bg-navbar: rgba(250, 249, 246, 0.85);
+    --text-primary: #1a1a1a;
+    --text-secondary: #5a5a5a;
+    --text-light: #8e8e8e;
+    --accent: #8d7a5f;
+    --accent-hover: #75634a;
+    --accent-light: #f5f2eb;
+    --border: #e8e5df;
+    --border-focus: #c5beae;
+    --error: #b85c5c;
+    --success: #5c9970;
+
+    /* Typography */
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-display: 'Outfit', sans-serif;
+
+    /* Spacing & Borders */
+    --radius-sm: 4px;
+    --radius-md: 12px;
+    --radius-lg: 24px;
+    --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-fast: all 0.2s ease;
+
+    /* Shadows */
+    --shadow-subtle: 0 4px 30px rgba(0, 0, 0, 0.02);
+    --shadow-medium: 0 16px 40px rgba(141, 122, 95, 0.06);
+    --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.03);
+}
+
+/* Reset & Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-main);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: var(--radius-sm);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-light);
+}
+
+/* Typography elements */
+h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.7;
+<truncated 18762 bytes>
