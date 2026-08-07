@@ -260,6 +260,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const email = document.getElementById('email').value;
             const checkin = checkinInput ? checkinInput.value : '';
             const checkout = checkoutInput ? checkoutInput.value : '';
+            const guests = document.getElementById('guests') ? document.getElementById('guests').value : '1';
+            const totalVal = totalEl ? totalEl.textContent : 'N/A';
 
             if (!name || !email || !checkin || !checkout) {
                 if (formStatus) {
@@ -270,24 +272,63 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Simulate form submission
+            // Web3Forms submission
             const submitBtn = bookingForm.querySelector('.btn-submit');
             const originalText = submitBtn.textContent;
             submitBtn.disabled = true;
             submitBtn.textContent = 'Sending Inquiry...';
 
-            setTimeout(() => {
-                bookingForm.reset();
-                if (pricingPreview) pricingPreview.style.display = 'none';
-                submitBtn.disabled = false;
-                submitBtn.textContent = originalText;
+            const formData = {
+                access_key: "d7e29147-02e8-491f-9838-bf00e57a8cf8",
+                name: name,
+                email: email,
+                subject: `New Direct Inquiry from ${name} (${checkin} to ${checkout})`,
+                from_name: "Greene Kairi Website",
+                checkin: checkin,
+                checkout: checkout,
+                guests: guests,
+                estimated_total: totalVal
+            };
 
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    bookingForm.reset();
+                    if (pricingPreview) pricingPreview.style.display = 'none';
+                    if (formStatus) {
+                        formStatus.style.color = 'var(--success)';
+                        formStatus.innerHTML = '<strong>Inquiry Sent Successfully!</strong><br>We will review your dates and email you within 24 hours.';
+                        formStatus.style.display = 'block';
+                    }
+                } else {
+                    console.log(response);
+                    if (formStatus) {
+                        formStatus.style.color = 'var(--error)';
+                        formStatus.textContent = json.message || 'Something went wrong. Please try again.';
+                        formStatus.style.display = 'block';
+                    }
+                }
+            })
+            .catch(error => {
+                console.log(error);
                 if (formStatus) {
-                    formStatus.style.color = 'var(--success)';
-                    formStatus.innerHTML = '<strong>Inquiry Sent Successfully!</strong><br>We will review your dates and email you within 24 hours.';
+                    formStatus.style.color = 'var(--error)';
+                    formStatus.textContent = 'Network error. Please check your connection and try again.';
                     formStatus.style.display = 'block';
                 }
-            }, 1500);
+            })
+            .then(() => {
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalText;
+            });
         });
     }
 });
