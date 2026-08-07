@@ -1104,3 +1104,68 @@ a {
         text-align: center;
     }
 }
+
+/* Sticky Booking Bar CSS */
+.sticky-booking-bar {
+    position: fixed;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-card);
+    border-top: 1px solid var(--border);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+    z-index: 999;
+    padding: 1rem 0;
+    transition: bottom 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sticky-booking-bar.show {
+    bottom: 0;
+}
+
+.sticky-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sticky-price-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.sticky-price-info .price-amount {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1.1;
+}
+
+.sticky-price-info .price-unit {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.btn-sticky-book {
+    background-color: var(--accent);
+    color: #ffffff !important;
+    padding: 0.75rem 1.75rem;
+    border-radius: var(--radius-sm, 6px);
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-align: center;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.btn-sticky-book:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 992px) {
+    body {
+        padding-bottom: 80px;
+    }
+}
+
